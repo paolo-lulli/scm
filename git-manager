@@ -12,7 +12,8 @@ AUTHOR_STRING="Paolo Lulli 2013 - paolo@lulli.net"
 WEBSERVICE_URL="http://src.dbthunder.com/scm/scm.php"
 
 if [ $1 != "" ]; then
-	mkdir $1 && cd $1
+	test -d $1 || mkdir $1
+	cd $1
 	touch README.md
 	git init 
 	url=$WEBSERVICE_URL?n=$1
