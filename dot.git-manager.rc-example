@@ -1,0 +1,8 @@
+
+#COPY me into $HOME/.git-manager.rc
+GIT_REPOS_REMOTE_HOME="/path/to/repos/dir"
+GIT_REPOS_REMOTE_USER=username
+GIT_REPOS_REMOTE_HOST=192.168.10.73
+AUTHOR_STRING="Name Surname 2013 - "
+WEBSERVICE_URL="http://path-to/scm/scm.php"
+

@@ -1,15 +1,6 @@
 #! /bin/bash -x
 
-#cd $(dirname $0)
-
-GIT_REPOS_REMOTE_HOME="/home2/dbthunde/src.repos"
-GIT_REPOS_REMOTE_USER=dbthunde
-GIT_REPOS_REMOTE_HOST=dbthunder.com
-
-AUTHOR_STRING="Paolo Lulli 2013 - paolo@lulli.net"
-#/home2/dbthunde/repos/allmyvideos/
-
-WEBSERVICE_URL="http://src.dbthunder.com/scm/scm.php"
+source $HOME/.git-manager.rc
 
 if [ $1 != "" ]; then
 	test -d $1 || mkdir $1
